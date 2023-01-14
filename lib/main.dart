@@ -117,6 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
           onPressed: () {
             callUser();
           }),
+      backgroundColor: Colors.white,
     );
   }
 
