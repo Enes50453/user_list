@@ -1,16 +1,12 @@
-# user_info
 
-A new Flutter project.
+# USER INFO LISTER APP
 
-## Getting Started
+This app made for display informations about the users 
+from an APİ. In the app,
+* You can see the users names, e-mail adresses, genders and profile pictures,
+* You can click on the search icon on top-right, and enter the number of users that you want to display. By clicking the refresh button you can get the new users. 
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![App Screenshot](https://github.com/Enes50453/user_list/blob/master/screenshots/ss1.jpeg?raw=true)
+![App Screenshot](https://github.com/Enes50453/user_list/blob/master/screenshots/ss2.jpeg?raw=true)
