@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:user_info/model/model.dart';
 import 'package:easy_search_bar/easy_search_bar.dart';
+import 'package:swipe_image_gallery/swipe_image_gallery.dart';
 
 void main() {
   runApp(const MyApp());
@@ -97,9 +98,20 @@ class _MyHomePageState extends State<MyHomePage> {
                             userResult!.results![index]!.name.last.toString()),
                         subtitle:
                             Text(userResult!.results![index]!.email.toString()),
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              userResult!.results![index]!.picture.thumbnail),
+                        leading: GestureDetector(
+                          onTap: () => SwipeImageGallery(
+                            initialIndex: index,
+                            context: context,
+                            itemBuilder: (context, index) {
+                              return Image.network(
+                                  userResult!.results![index]!.picture.large);
+                            },
+                            itemCount: userResult!.results!.length,
+                          ).show(),
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                userResult!.results![index]!.picture.thumbnail),
+                          ),
                         ),
                         trailing: Icon(
                           getGender(
