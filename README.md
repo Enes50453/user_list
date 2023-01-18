@@ -5,6 +5,7 @@ This app made for display informations about the users
 from an APİ. In the app,
 * You can see the users names, e-mail adresses, genders and profile pictures,
 * You can click on the search icon on top-right, and enter the number of users that you want to display. By clicking the refresh button you can get the new users. 
+* /UPDATE/ You can click on users profile pictures to see bigger
 
 ## Screenshots
 
